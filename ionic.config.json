@@ -1,0 +1,7 @@
+{
+  "name": "sisdroid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
