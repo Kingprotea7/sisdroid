@@ -1,0 +1,57 @@
+.form-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente el QR y el formulario */
+  justify-content: flex-start; /* Alinea los elementos al principio del contenedor */
+  padding: 50px; /* Espaciado alrededor del contenedor */
+  margin-left: 250px; /* Espacio a la izquierda para centrar en pantallas grandes */
+}
+
+.qr-container {
+  flex: 0 0 30%; /* Ocupa 30% del espacio para el QR */
+  text-align: center; /* Centra el contenido */
+  margin-right: 20px; /* Espacio a la derecha del QR */
+  margin-top: 20px; /* Aumenta el margen superior para centrar verticalmente */
+}
+
+.qr-icon {
+  font-size: 80px; /* Tamaño más pequeño para el icono QR */
+  color: #007bff; /* Color del icono (ajusta según tu tema) */
+}
+
+.form-right {
+  flex: 0 0 70%; /* Ocupa 70% del espacio para el formulario */
+  max-width: 400px; /* Ajusta el tamaño máximo del formulario */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding: 20px; /* Reduce el espaciado */
+  }
+
+  .qr-container {
+    flex: 0 0 auto; /* Ajusta el espacio del QR */
+    margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
+  }
+
+  .form-right {
+    max-width: 100%; /* Permite que el formulario ocupe todo el ancho disponible */
+  }
+}
+
+.apellidos-container {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los dos campos */
+}
+
+.apellidos-container ion-item {
+  width: 48%; /* Ajusta el ancho de cada campo para reducir el espacio */
+}
+
+/* Agrega un poco de espacio vertical entre los campos del formulario */
+ion-item {
+  margin-bottom: 15px; /* Espaciado entre los elementos del formulario */
+}
